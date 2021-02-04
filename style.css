@@ -8,6 +8,7 @@ html,
 body{
   background: #000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 #the-button{
@@ -17,6 +18,7 @@ body{
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  text-align: center;
   width: 100vw;
 }
 
@@ -29,7 +31,7 @@ h1{
 
 h2{
   color: white;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: lighter;
   margin: 0 0 20px 0;
 }
@@ -52,6 +54,7 @@ h2{
   font-size: 14px;
   opacity: 0.5;
   padding: 10px 10px;
+  text-align: center;
   text-transform: uppercase;
   transition: 0.15s ease-in;
   z-index: 1;
@@ -89,6 +92,10 @@ h2{
 }
 
 @media screen and (min-width: 768px) {
+  h2{
+    font-size: 25px;
+  }
+
   .surprise{
     height: 394px;
     width: 700px;
