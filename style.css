@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#the-button{
+  align-items: center;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+h1{
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 10px 0 0 0;
+}
+
+h2{
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  margin: 0 0 20px 0;
+}
+
+.surprise{
+  background-color: #000;
+  cursor: default;
+  height: 450px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+}
+
+.surprise .play-button{
+  background-color: #fff;
+  border-radius: 6px;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.5;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  transition: 0.15s ease-in;
+  z-index: 1;
+}
+
+.surprise .play-button:hover{
+  opacity: 1;
+}
+
+.surprise iframe,
+.surprise .play-button,
+.surprise .play-button:before{
+  position: absolute;
+}
+
+.surprise .play-button,
+.surprise .play-button:before{
+  left: 50%;
+  top: 50%;
+  transform: translate3d( -50%, -50%, 0 );
+}
+
+.surprise iframe{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
