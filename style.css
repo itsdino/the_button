@@ -37,11 +37,11 @@ h2{
 .surprise{
   background-color: #000;
   cursor: default;
-  height: 450px;
+  height: 169px;
   margin-bottom: 30px;
   overflow: hidden;
   position: relative;
-  width: 800px;
+  width: 300px;
 }
 
 .surprise .play-button{
@@ -79,4 +79,25 @@ h2{
   width: 100%;
   top: 0;
   left: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .surprise{
+    height: 270px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .surprise{
+    height: 394px;
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .surprise{
+    height: 450px;
+    width: 800px;
+  }
 }
